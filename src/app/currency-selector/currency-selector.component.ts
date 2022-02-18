@@ -8,7 +8,6 @@ import { Component, Input, Output, EventEmitter } from "@angular/core";
 })
 export class CurrencySelectorComponent {
   selectedValue: Currency;
-  defaultCurrency: string = "";
   @Input() currencies: Currency[] = [];
   @Output() onSelect = new EventEmitter<Currency>();
 
