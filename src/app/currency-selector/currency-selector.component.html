@@ -1,0 +1,5 @@
+<select (change)="selectCurrency()" [(ngModel)]="selectedValue">
+  <option *ngFor="let currency of currencies" [ngValue]="currency">
+    {{ currency.code }}
+  </option>
+</select>
